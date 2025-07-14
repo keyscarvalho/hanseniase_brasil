@@ -39,6 +39,7 @@ df_long['casos'] = pd.to_numeric(df_long['casos'], errors='coerce')
 
 df_total = df_long.groupby('grau_incapacidade')['casos'].sum().reset_index()
 
+
 #%%
 
 plt.figure(figsize=(15,6))
