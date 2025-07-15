@@ -72,6 +72,10 @@ plt.xlabel('Escolaridade')
 plt.ylabel('Total de Casos')
 plt.xticks(rotation=90)
 
-plt.savefig('casos_escolaridade.png')
-
 plt.tight_layout()
+
+#%%
+
+df_raca_escolaridade = pd.read_csv('total_por_raca.csv')
+
+df_raca_escolaridade.head()
